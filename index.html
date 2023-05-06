@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>shipping calculator-DOM</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+ <h2>Amazon Shipping Calculator</h2>
+
+ <!--for this element we used "onkeydown" feature, so now when we enter the ENTER key it acts like the calculate button(below) and 
+ runs the handleCostKeyDown function, I gave it two different classes,Because I use one of them in css and the other one in js.-->
+ <input class="js-cost-input cost-input" placeholder="Cost of Order" onkeydown="handleCostKeyDown(event);">
+ 
+ <!--I build the calculate button here, which runs the calculateTotal function. -->
+ <button onclick="calculateTotal()" class="calculate-button">Calculate</button>
+
+ <!--I created an empty -p- tag to store the result in it later. -->
+ <p class="js-total-cost"></p>
+
+
+  <script src="javascript.js"></script>
+
+</body>
+
+</html>

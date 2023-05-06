@@ -1,0 +1,27 @@
+ *{
+   box-sizing: border-box;
+}
+
+.cost-input{
+    font-size:15px;
+    padding: 10px;
+}
+
+.calculate-button{
+    background-color: green;
+    color:white;
+    border:none;
+    font-size:15px;
+    padding:12px 15px;
+    cursor:pointer;
+}
+
+/*since for screens smaller than 360px it does not look good,lets change the style. */
+
+@media(max-width:350px){
+    .calculate-button{
+        margin: 10px auto;
+        display: block;
+    }
+}
+
